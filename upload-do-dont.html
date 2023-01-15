@@ -13,7 +13,7 @@
 <meta name="creation_Date" content="14/01/2023" />
 <meta name="expires" content="" />
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-<title>Profile Picture | Payment</title>
+<title>Profile Picture | Upload</title>
 
 <!--StyleSheet-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,50 +41,44 @@
             <div class="text-center breadcrumb-signup">
               <ol class="breadcrumb text-center">
                 <li><a href="index.html">Login</a></li>
-                <li class="active">Payment</li>
+                <li><a href="index.html">Payment</a></li>
                 <li><a href="style.html">Styles</a></li>
                 <li><a href="upload.html">Upload</a></li>
               </ol>
             </div>
-            <!-- Form Area -->
+             <!-- Form Area -->
             <div class="hero-wrap rounded shadow-lg p-3 py-sm-5 px-sm-5 my-4">
               <div class="hero-mask opacity-9 bg-light"></div>
               <div class="hero-content">
                 <div class="d-flex flex-column align-items-center">
                   <div class="text-center loginheader">
-                    <h3>Add a Person</h3>
-                    <p>Create profile pictures with AI, trained on one specific person.</p>
+                    <h3>Upload do's and don'ts</h3>
+                    <p>Make sure to read the images bellow very carefully. I will help you get the best results. <strong>We do not refund oders that do not meet our registration requirements</strong></p>
                   </div>
                   <div class="d-grid my-3 gap-3 btnarea">
 
-                    <div class="d-flex justify-content-between pricearea">
-                      <select name="" onchange="myFunction(event)">
-                          <option disabled selected>Select</option>
-                          <option value="$5.80">1</option>
-                          <option value="$11.60">2</option>
-                          <option value="$17.40">3</option>
-                          <option value="$23.20">4</option>
-                      </select>
-                      <div class="d-flex align-items-center">
-                        <span>Total checkout price is</span>
-                      <input id="price" type="text" disabled value="$5.80">
+                    <div class="w-100 grid grid-cols-5 align-items-center bg-warning py-3">
+                      <div class="d-flex flex-col col-span-3 align-items-center mb-2">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        <h2>Upload your best photos. Bad Upload + Bad Results!</h2>
+                      </div>
+                      <div class="d-flex flex-col col-span-3 align-items-center">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        <h2>Make sure only you are in the photos. No photos!</h2>
                       </div>
                     </div>
 
-                    <div class="w-100 grid grid-cols-5 align-items-center d-flex justify-content-end">
-                      <div class="d-flex align-items-center col-span-3 mb-1">
-                        <img src="images/mpesa.png" alt="">
-                        <h2>M-Pesa</h2>
-                      </div>
-                      <div class="flex justify-end w-50 col-span-5 text-end"> 
-                        <a href="#" class="block w-100">
-                        <button aria-label="White button" type="button" class="flex content-center items-center justify-center text-center px-4 py-2 shadow-sm rounded-md bg-white btn-col-span"> Select </button>
-                        </a> 
+                    <div class="w-100">
+                      <div class="d-flex flex-col col-span-3 align-items-center mb-2 text-center justify-content-center">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        <h2 class="text-2">We do not refund anyone who breaks these rules!</h2>
                       </div>
                     </div>
-                      <div class="form-group">
-                        <input class="form-control" id="price" type="text" placeholder="Mpesa Number">
-                      </div>
+
+                    <div class="w-100 text-center align-items-center">
+                      <a href="upload-do-dont.html" class="btn btn-default rounded-pill shadow-none">Okay I understand the above</a>
+                    </div>
+
                   </div>
               </div>
             </div>
@@ -99,11 +93,6 @@
 <!-- jQuery -->
 <script src="js/jquery.min.js" type="text/Javascript"></script>
 <script src="js/main.js" type="text/Javascript"></script>
-<script type="text/javascript">
-  function myFunction(e) {
-    document.getElementById("price").value = e.target.value
-}
-</script>
 </body>
 
 </html>
